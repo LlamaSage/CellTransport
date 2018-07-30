@@ -13,7 +13,7 @@ public class GravitationScript : MonoBehaviour {
     void OnTriggerStay(Collider col)
     {
         
-        if (IonGrav && col.GetComponent<Collider>().tag == "Ion")
+        if (IonGrav && col.GetComponent<Collider>().tag == "Calcium" || col.GetComponent<Collider>().tag == "Natrium")
         {
             Vector3 targetPos = this.transform.position - col.transform.position;
             col.GetComponent<Rigidbody>().AddForce(targetPos);

@@ -7,7 +7,7 @@ public class CountAreaScript : MonoBehaviour {
     public GameObject[] Objects;
     public int[] ObjectNumber;
     public float minimumObjectSpeed = 1.0f;
-    private int numberOfIons = 0, numberOfMatter = 0;
+    private int numberOfCalcium = 0, numberOfNatrium = 0;
 
     // Use this for initialization
     void Start()
@@ -17,28 +17,29 @@ public class CountAreaScript : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Ion")
-            numberOfIons++;
-        else if (other.tag == "Matter")
-            numberOfMatter++;
+        if (other.tag == "Calcium")
+            numberOfCalcium++;
+        else if (other.tag == "Natrium")
+            numberOfNatrium++;
+        else if(other.tag == "NaCaCol")
 
-        Debug.Log("New number of Ions = " + numberOfIons);
-        Debug.Log("New number of Matter =" + numberOfMatter);
+        Debug.Log("New number of Calcium = " + numberOfCalcium);
+        Debug.Log("New number of Natrium =" + numberOfNatrium);
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.tag == "Ion")
-            numberOfIons--;
-        else if (other.tag == "Matter")
-            numberOfMatter--;
-        Debug.Log("New number of Ions = " + numberOfIons);
-        Debug.Log("New number of Matter =" + numberOfMatter);
+        if (other.tag == "Calcium")
+            numberOfCalcium--;
+        else if (other.tag == "Natrium")
+            numberOfNatrium--;
+        Debug.Log("New number of Calcium = " + numberOfCalcium);
+        Debug.Log("New number of Natrium =" + numberOfNatrium);
     }
 
     private void OnTriggerStay(Collider other)
     {
-        if(other.tag == "Ion" || other.tag == "Matter")
+        if(other.tag == "Calcium" || other.tag == "Natrium")
         {
             if(other.GetComponent<Rigidbody>().velocity.magnitude < minimumObjectSpeed)
             {

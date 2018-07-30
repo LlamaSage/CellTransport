@@ -24,9 +24,10 @@ GameObject:
   - component: {fileID: 95537966749815604}
   - component: {fileID: 135135642021246594}
   - component: {fileID: 54040986957011252}
+  - component: {fileID: 114524961595698620}
   m_Layer: 0
   m_Name: Calcium_Prefab
-  m_TagString: Matter
+  m_TagString: Calcium
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1926216690503444}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.1907318, y: 1.9399538, z: 0}
+  m_LocalPosition: {x: -0.7315209, y: -3.6835809, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -117,6 +118,20 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114524961595698620
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1926216690503444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da6cc17a8a74bb42960831856624002, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MergeObjects:
+  - {fileID: 1190968510970724, guid: ab62f45a54a3d5241a08eb952440395e, type: 2}
+  CollisionCooldown: 5
 --- !u!135 &135135642021246594
 SphereCollider:
   m_ObjectHideFlags: 1

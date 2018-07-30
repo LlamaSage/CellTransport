@@ -24,9 +24,10 @@ GameObject:
   - component: {fileID: 95981149506384272}
   - component: {fileID: 135591839775296778}
   - component: {fileID: 54178138723747590}
+  - component: {fileID: 114302169923385962}
   m_Layer: 0
   m_Name: Natrium_Prefab
-  m_TagString: Matter
+  m_TagString: Natrium
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1386230152895814}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -3.5797057, y: -1.833517, z: 0}
+  m_LocalPosition: {x: -0.3192542, y: -3.6883469, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -58,7 +59,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 3d5d8ca931e5e3f459baa29a6d845e93, type: 2}
+  - {fileID: 2100000, guid: 99f7020cbb2582948a1e83fd6cdbaa3e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -117,6 +118,20 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114302169923385962
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1386230152895814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da6cc17a8a74bb42960831856624002, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MergeObjects:
+  - {fileID: 1190968510970724, guid: ab62f45a54a3d5241a08eb952440395e, type: 2}
+  CollisionCooldown: 5
 --- !u!135 &135591839775296778
 SphereCollider:
   m_ObjectHideFlags: 1
