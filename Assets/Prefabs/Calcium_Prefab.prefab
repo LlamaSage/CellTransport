@@ -39,8 +39,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1926216690503444}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.7315209, y: -3.6835809, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -2.6067362, y: -1.9454767, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -59,7 +59,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: a16df14d1325ddd44b54c20d1306767b, type: 2}
+  - {fileID: 2100000, guid: b56231d8fafa8d3469d4d39c122817e4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -129,6 +129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7da6cc17a8a74bb42960831856624002, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isClicked: 0
   MergeObjects:
   - {fileID: 1190968510970724, guid: ab62f45a54a3d5241a08eb952440395e, type: 2}
   CollisionCooldown: 5
@@ -138,7 +139,7 @@ SphereCollider:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1926216690503444}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: c343ab5c138b79a4b8c3de19c3870055, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2

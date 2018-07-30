@@ -1,0 +1,177 @@
+fileFormatVersion: 2
+guid: c067e01f48e87e541bc4c248d49ec37e
+timeCreated: 1532957945
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Teil04
+    100002: Teil05
+    100004: Teil06
+    100006: Tunnel10
+    100008: Tunnel11
+    100010: Tunnel5
+    100012: Tunnel7
+    100014: Tunnel8
+    100016: Tunnel9
+    100018: //RootNode
+    400000: Teil04
+    400002: Teil05
+    400004: Teil06
+    400006: Tunnel10
+    400008: Tunnel11
+    400010: Tunnel5
+    400012: Tunnel7
+    400014: Tunnel8
+    400016: Tunnel9
+    400018: //RootNode
+    2300000: Teil04
+    2300002: Teil05
+    2300004: Teil06
+    2300006: Tunnel10
+    2300008: Tunnel11
+    2300010: Tunnel5
+    2300012: Tunnel7
+    2300014: Tunnel8
+    2300016: Tunnel9
+    3300000: Teil04
+    3300002: Teil05
+    3300004: Teil06
+    3300006: Tunnel10
+    3300008: Tunnel11
+    3300010: Tunnel5
+    3300012: Tunnel7
+    3300014: Tunnel8
+    3300016: Tunnel9
+    4300000: Teil04
+    4300002: Tunnel8
+    4300004: Tunnel11
+    4300006: Tunnel5
+    4300008: Tunnel9
+    4300010: Tunnel10
+    4300012: Teil05
+    4300014: Teil06
+    4300016: Tunnel7
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Membran01
+    second: {fileID: 2100000, guid: 234844535b3421849b0a4aa8d4197b50, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Membran02
+    second: {fileID: 2100000, guid: b0e0bbd228385184c8b5dcfdf9020957, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Membran03
+    second: {fileID: 2100000, guid: 032b1da3f98babd40818ae509eee2f61, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tunnel01
+    second: {fileID: 2100000, guid: 51c02cd5ac0a6f4489280e5a51c4a479, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tunnel01a
+    second: {fileID: 2100000, guid: a19b1958c8d4e5c4595e2ff4261b0607, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tunnel02
+    second: {fileID: 2100000, guid: a8d947b84250f0d4cabc6197d99c7b47, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tunnel02a
+    second: {fileID: 2100000, guid: af984545d3946f1429acdb089e2e4152, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tunnel03
+    second: {fileID: 2100000, guid: b0e208081bab1424e90e509e6a4aa0fe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tunnel03a
+    second: {fileID: 2100000, guid: 573b655464ee681468721bbe9b345028, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

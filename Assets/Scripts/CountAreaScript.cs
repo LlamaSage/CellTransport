@@ -7,6 +7,7 @@ public class CountAreaScript : MonoBehaviour {
     public GameObject[] Objects;
     public int[] ObjectNumber;
     public float minimumObjectSpeed = 1.0f;
+    public float minimumRotationSpeed = 0.25f;
     private int numberOfCalcium = 0, numberOfNatrium = 0;
 
     // Use this for initialization
@@ -22,9 +23,12 @@ public class CountAreaScript : MonoBehaviour {
         else if (other.tag == "Natrium")
             numberOfNatrium++;
         else if(other.tag == "NaCaCol")
+        {
+            //TODO: SOMETHING
+        }
 
-        Debug.Log("New number of Calcium = " + numberOfCalcium);
-        Debug.Log("New number of Natrium =" + numberOfNatrium);
+        //Debug.Log("New number of Calcium = " + numberOfCalcium);
+        //Debug.Log("New number of Natrium =" + numberOfNatrium);
     }
 
     private void OnTriggerExit(Collider other)
@@ -33,17 +37,25 @@ public class CountAreaScript : MonoBehaviour {
             numberOfCalcium--;
         else if (other.tag == "Natrium")
             numberOfNatrium--;
-        Debug.Log("New number of Calcium = " + numberOfCalcium);
-        Debug.Log("New number of Natrium =" + numberOfNatrium);
+        //Debug.Log("New number of Calcium = " + numberOfCalcium);
+        //Debug.Log("New number of Natrium =" + numberOfNatrium);
     }
 
     private void OnTriggerStay(Collider other)
     {
         if(other.tag == "Calcium" || other.tag == "Natrium")
         {
-            if(other.GetComponent<Rigidbody>().velocity.magnitude < minimumObjectSpeed)
+            if (!other.GetComponent<GlueTogetherCollisionScript>().isClicked)
             {
-                other.GetComponent<Rigidbody>().AddForce(Random.Range(-minimumObjectSpeed, minimumObjectSpeed), Random.Range(-minimumObjectSpeed, minimumObjectSpeed), 0.0f);
+                if (other.GetComponent<Rigidbody>().velocity.magnitude < minimumObjectSpeed)
+                {
+                    other.GetComponent<Rigidbody>().AddForce(Random.Range(-minimumObjectSpeed, minimumObjectSpeed), Random.Range(-minimumObjectSpeed, minimumObjectSpeed), 0.0f);
+                }
+
+                if (other.GetComponent<Rigidbody>().angularVelocity.magnitude < minimumRotationSpeed)
+                {
+                    other.GetComponent<Rigidbody>().AddTorque(Random.Range(-minimumRotationSpeed, minimumRotationSpeed), Random.Range(-minimumRotationSpeed, minimumRotationSpeed), 0.0f);
+                }
             }
         }
 
