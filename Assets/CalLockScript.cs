@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NatLockScript : MonoBehaviour {
+public class CalLockScript : MonoBehaviour {
 
     public bool locked = false;
     public float cooldown = 5;
@@ -11,9 +11,9 @@ public class NatLockScript : MonoBehaviour {
 
     public void OnTriggerEnter(Collider other)
     {
-        if(!locked && localCooldown<=0.0f && other.gameObject.tag == "Natrium")
+        if(!locked && localCooldown<=0.0f && other.gameObject.tag == "Calcium")
         {
-            other.gameObject.transform.SetPositionAndRotation(new Vector3(this.GetComponent<CapsuleCollider>().transform.position.x, this.GetComponent<CapsuleCollider>().transform.position.y, 0.0f), Quaternion.Euler(new Vector3(90.0f, 0.0f, 0.0f)));
+            other.gameObject.transform.SetPositionAndRotation(new Vector3(this.GetComponent<CapsuleCollider>().transform.position.x, this.GetComponent<CapsuleCollider>().transform.position.y, 0.0f), Quaternion.Euler(new Vector3(0.0f, 0.0f, 0.0f)));
             other.gameObject.GetComponent<Rigidbody>().isKinematic = true;
             occupant = other.gameObject;
             this.locked = true;
