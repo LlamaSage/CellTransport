@@ -11,6 +11,7 @@ public class ClickManager : MonoBehaviour
     public float drag = 6.0f;
     public Material[] CalciumMaterials;
     public Material[] NatriumMaterials;
+    public Material[] KaliumMaterials;
 
     void Update()
     {
@@ -21,7 +22,7 @@ public class ClickManager : MonoBehaviour
             if (Physics.Raycast(ray, out hit))
                 if (hit.collider != null)
                 {
-                    if (hit.collider.gameObject.tag == "Calcium" || hit.collider.gameObject.tag == "Natrium")
+                    if (hit.collider.gameObject.tag == "Calcium" || hit.collider.gameObject.tag == "Natrium" || hit.collider.gameObject.tag == "Kalium")
                     {
                         clickedObject = hit.collider.gameObject;
                         clickedObject.GetComponent<GlueTogetherCollisionScript>().isClicked = true;
@@ -37,6 +38,10 @@ public class ClickManager : MonoBehaviour
                         else if (clickedObject.tag == "Natrium")
                         {
                             clickedObject.GetComponent<Renderer>().material = NatriumMaterials[1];
+                        }
+                        else if (clickedObject.tag == "Kalium")
+                        {
+                            clickedObject.GetComponent<Renderer>().material = KaliumMaterials[1];
                         }
 
                     }
@@ -65,6 +70,10 @@ public class ClickManager : MonoBehaviour
             else if (clickedObject.tag == "Natrium")
             {
                 clickedObject.GetComponent<Renderer>().material = NatriumMaterials[0];
+            }
+            else if (clickedObject.tag == "Kalium")
+            {
+                clickedObject.GetComponent<Renderer>().material = KaliumMaterials[0];
             }
             clickedObject.GetComponent<Rigidbody>().drag = 0.25f;
             clickedObject = null;

@@ -13,7 +13,7 @@ public class GravitationScript : MonoBehaviour
     void OnTriggerStay(Collider col)
     {
 
-        if (col.GetComponent<Collider>().tag == "Calcium" || col.GetComponent<Collider>().tag == "Natrium")
+        if (col.GetComponent<Collider>().tag == "Calcium" || col.GetComponent<Collider>().tag == "Natrium" || col.GetComponent<Collider>().tag == "Kalium")
         {
             if (col.GetComponent<GlueTogetherCollisionScript>().isClicked == false)
             {

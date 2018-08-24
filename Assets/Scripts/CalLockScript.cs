@@ -11,7 +11,7 @@ public class CalLockScript : MonoBehaviour {
 
     public void OnTriggerEnter(Collider other)
     {
-        if(!locked && localCooldown<=0.0f && other.gameObject.tag == "Calcium")
+        if(!locked && localCooldown<=0.0f && other.gameObject.tag == "Kalium")
         {
             other.gameObject.transform.SetPositionAndRotation(new Vector3(this.GetComponent<CapsuleCollider>().transform.position.x, this.GetComponent<CapsuleCollider>().transform.position.y, 0.0f), Quaternion.Euler(new Vector3(0.0f, 0.0f, 0.0f)));
             other.gameObject.GetComponent<Rigidbody>().isKinematic = true;

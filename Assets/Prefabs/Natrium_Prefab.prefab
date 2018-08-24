@@ -132,7 +132,10 @@ MonoBehaviour:
   isClicked: 0
   MergeObjects:
   - {fileID: 1190968510970724, guid: ab62f45a54a3d5241a08eb952440395e, type: 2}
+  - {fileID: 1746793132056952, guid: c22f24d0438dd8649a5ce1ce18bd9034, type: 2}
+  - {fileID: 1948401994518006, guid: 59b06fcb816c5eb48a647eb559074942, type: 2}
   CollisionCooldown: 5
+  notCollided: 1
 --- !u!135 &135591839775296778
 SphereCollider:
   m_ObjectHideFlags: 1

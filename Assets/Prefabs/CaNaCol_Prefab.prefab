@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 114039769731695538}
   - component: {fileID: 136545715787640038}
   m_Layer: 0
-  m_Name: CaNaCol
+  m_Name: CaNaCol_Prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
