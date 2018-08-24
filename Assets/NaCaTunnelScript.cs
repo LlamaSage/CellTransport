@@ -10,6 +10,7 @@ public class NaCaTunnelScript : MonoBehaviour
     public GameObject lowerWall;
     public GameObject upperWall;
     private bool gatheringNat = true;
+    public ScoreManagerScript score;
 
 
     // Use this for initialization
@@ -70,7 +71,6 @@ public class NaCaTunnelScript : MonoBehaviour
             {
                 cal.gameObject.SetActive(true);
             }
-
         }
         else
         {
@@ -88,8 +88,8 @@ public class NaCaTunnelScript : MonoBehaviour
                 na.gameObject.SetActive(true);
             }
         }
-
         gatheringNat = !gatheringNat;
+        score.incrementMultiplier();
 
     }
 }
