@@ -16,7 +16,7 @@ public class CalLockScript : MonoBehaviour {
             other.gameObject.transform.SetPositionAndRotation(new Vector3(this.GetComponent<CapsuleCollider>().transform.position.x, this.GetComponent<CapsuleCollider>().transform.position.y, 0.0f), Quaternion.Euler(new Vector3(0.0f, 0.0f, 0.0f)));
             other.gameObject.GetComponent<Rigidbody>().isKinematic = true;
             occupant = other.gameObject;
-            occupant.GetComponent<GlueTogetherCollisionScript>().notCollided = false;
+            occupant.GetComponent<GlueTogetherCollisionScript>().CollisionCooldown = float.MaxValue;
             this.locked = true;
         }
 
@@ -35,7 +35,7 @@ public class CalLockScript : MonoBehaviour {
         {
             occupant.GetComponent<Rigidbody>().isKinematic = false;
             occupant.GetComponent<Rigidbody>().AddForce(direction);
-            occupant.GetComponent<GlueTogetherCollisionScript>().notCollided = true;
+            occupant.GetComponent<GlueTogetherCollisionScript>().CollisionCooldown = 3.0f;
             occupant = null;
         }
         locked = false;
