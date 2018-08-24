@@ -7,7 +7,7 @@ public class GlueTogetherCollisionScript : MonoBehaviour
     public bool isClicked = false;
     public GameObject[] MergeObjects;
     public float CollisionCooldown = 5.0f;
-    bool notCollided = true;
+    public bool notCollided = true;
 
 
 
@@ -36,5 +36,7 @@ public class GlueTogetherCollisionScript : MonoBehaviour
     {
         if (CollisionCooldown > 0.0f)
             CollisionCooldown -= Time.deltaTime;
+        if (this.transform.position.z > 0.8 || this.transform.position.z < -0.8)
+            this.transform.position.Set(this.transform.position.x, this.transform.position.y, 0.0f);
     }
 }

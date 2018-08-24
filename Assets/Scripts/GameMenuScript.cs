@@ -31,9 +31,6 @@ public class GameMenuScript : MonoBehaviour {
 
     public void quitGame()
     {
-        if(Application.isEditor)
-            UnityEditor.EditorApplication.isPlaying = false;
-        else
             Application.Quit();
     }
 
