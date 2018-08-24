@@ -9,6 +9,7 @@ public class SliderHandleScript : MonoBehaviour {
     public float gameTime = 10.0f;
     private float localTimer;
     public Slider slider;
+    public Canvas menuCanvas;
 
 	// Use this for initialization
 	void Start () {
@@ -17,7 +18,7 @@ public class SliderHandleScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (localTimer > 0.0f)
+        if ((!menuCanvas.gameObject.activeInHierarchy) && localTimer > 0.0f)
         {
             localTimer -= Time.deltaTime;
             slider.value = localTimer / gameTime;
