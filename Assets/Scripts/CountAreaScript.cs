@@ -43,7 +43,7 @@ public class CountAreaScript : MonoBehaviour {
 
     private void OnTriggerStay(Collider other)
     {
-        if(other.tag == "Calcium" || other.tag == "Natrium")
+        if(other.tag == "Calcium" || other.tag == "Natrium" || other.tag == "Kalium")
         {
             if (!other.GetComponent<GlueTogetherCollisionScript>().isClicked)
             {
